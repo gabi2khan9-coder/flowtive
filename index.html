@@ -273,6 +273,18 @@ header{
 .stat-num span{color:var(--brass);}
 .stat-cap{margin-top:10px; font-size:14.5px; color:var(--text-dim); line-height:1.5;}
 .stat-note{margin-top:36px; font-size:13px; color:var(--text-dim); font-style:italic;}
+.savings-featured{
+  background:radial-gradient(900px 500px at 50% 0%, rgba(199,154,68,0.10), transparent 65%);
+  border-top:1px solid var(--line-light);
+  border-bottom:1px solid var(--line-light);
+}
+.savings-featured .section-head h2{font-size:clamp(32px,4.4vw,48px);}
+.savings-featured .section-head p{font-size:18px;}
+.stat-row-featured{
+  border-color:var(--brass);
+  box-shadow:0 0 0 1px rgba(199,154,68,0.18), 0 20px 50px -24px rgba(199,154,68,0.35);
+}
+.stat-row-featured .stat-num{font-size:52px;}
 .pillars{
   display:grid; grid-template-columns:repeat(3,1fr); gap:26px;
 }
@@ -562,7 +574,6 @@ Flowtive
 <div class="section-head reveal">
 <div class="eyebrow">What it does</div>
 <h2>Three Jobs It Takes Off Your Plate</h2>
-<p>This isn't just a chatbot on your website. It's an AI receptionist that answers your calls, texts, and emails—using your business information, 24/7, from day one.</p>
 </div>
 <div class="pillars">
 <div class="pillar-card reveal">
@@ -623,12 +634,52 @@ Flowtive
 </div>
 </section>
 
+<section class="section savings-featured" id="savings">
+<div class="wrap">
+<div class="section-head reveal">
+<div class="eyebrow">The bottom line</div>
+<h2>It <em>pays for itself</em> — fast.</h2>
+<p>Flowtive costs a fraction of what a front-desk hire does, and it never clocks out. Here's the math most owners see within the first month.</p>
+</div>
+<div class="stat-row stat-row-featured reveal">
+<div class="stat-cell">
+<div class="stat-num">$<span>1,800</span>+/mo</div>
+<div class="stat-cap">Average revenue recovered from calls and messages that would've gone unanswered.</div>
+</div>
+<div class="stat-cell">
+<div class="stat-num"><span>15</span> hrs/wk</div>
+<div class="stat-cap">Staff time freed up from answering the same scheduling questions over and over.</div>
+</div>
+<div class="stat-cell">
+<div class="stat-num"><span>4–9</span>x</div>
+<div class="stat-cap">Typical return on your monthly plan cost, once recovered bookings are counted.</div>
+</div>
+</div>
+<p class="stat-note reveal">Figures are illustrative estimates based on patterns common across service businesses — actual savings vary by business.</p>
+<div class="results-grid reveal" style="margin-top:24px;">
+<div class="result-card">
+<div class="biz">Part-time receptionist</div>
+<div class="type">The traditional fix</div>
+<div class="metric-row"><span class="metric-label">Monthly cost</span><span class="metric-change">$1,800–2,500+</span></div>
+<div class="metric-row"><span class="metric-label">Coverage</span><span class="metric-change">Business hours only</span></div>
+<div class="metric-row"><span class="metric-label">Sick days, turnover, training</span><span class="metric-change">Your problem</span></div>
+</div>
+<div class="result-card" style="border-color:var(--brass); border-width:2px; background:var(--ink-soft); box-shadow:0 12px 34px -10px rgba(199,154,68,0.45);">
+<div class="biz" style="color:var(--text-light);">Flowtive</div>
+<div class="type" style="color:var(--text-light-dim);">The math-friendly fix</div>
+<div class="metric-row" style="border-top-color:var(--line-dark);"><span class="metric-label" style="color:var(--text-light-dim);">Monthly cost</span><span class="metric-change good">$99–199</span></div>
+<div class="metric-row" style="border-top-color:var(--line-dark);"><span class="metric-label" style="color:var(--text-light-dim);">Coverage</span><span class="metric-change good">24/7, every day</span></div>
+<div class="metric-row" style="border-top-color:var(--line-dark);"><span class="metric-label" style="color:var(--text-light-dim);">Sick days, turnover, training</span><span class="metric-change good">Never</span></div>
+</div>
+</div>
+</div>
+</section>
+
 <section class="section section-dark" id="results">
 <div class="wrap">
 <div class="section-head reveal">
 <div class="eyebrow">Illustrative examples</div>
 <h2>What this tends to look like after a few weeks.</h2>
-<p>Every business is different, so treat these as a shape of the outcome, not a promise — but this is the direction owners typically see.</p>
 </div>
 <div class="results-grid">
 <div class="result-card reveal">
@@ -661,7 +712,7 @@ Flowtive
 <div class="section-head reveal">
 <div class="eyebrow">Simple pricing</div>
 <h2>Pick a plan. Be live in about a week.</h2>
-<p>No long-term contract. Every plan includes setup, your first script written for you, and changes whenever your hours or prices change.</p>
+<p>We set everything up, write your initial script, and make updates whenever your hours, pricing, or services change—so you don't have to.</p>
 </div>
 <div class="pricing-grid">
 <div class="price-card reveal">
